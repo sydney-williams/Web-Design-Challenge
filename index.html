@@ -10,78 +10,74 @@
   <title>Weather Report - Welcome to Sydney's Weather Report</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="css/small-business.css" rel="stylesheet">
 
-</head>
 
+</head>
+<h1>Welcome to Sydney's Weather Report</h1>	
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Sydney's Weather Report</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Welcome
-              <!-- <span class="sr-only">(Hello)</span> -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison_page.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data_page.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Compatisons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Visualization</a>
+            <ul class="dropdown-menu" aria-labelledby="plotsDropDown">
+              <li><a class="dropdown-item" href="visualization_page1.html">Latitude vs. Max Temp</a></li>
+              <li><a class="dropdown-item" href="visualization_page2.html">Latitude vs. Humidity</a></li>
+              <li><a class="dropdown-item" href="visualization_page3.html">Latitude vs. Cloudiness</a></li>
+              <li><a class="dropdown-item" href="visualization_page4.html">Latitude vs. Wind Speed</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+
+  <img src="Images/landingResize.png" class="img-fluid" alt="landingResize image">
+
+  <!-- <img src="Images/nav-lg.png" class="img-fluid" alt="nav-lg image">
+  <img src="Images/visualize-lg.png" class="img-fluid" alt="visualize-lg image">
+  <img src="Images/comparison-lg.png" class="img-fluid" alt="comparison-lg image">
+  <img src="Images/data-lg.png" class="img-fluid" alt="data-lg image"> -->
+
+
   <!-- Page Content -->
   <div class="container">
-
-    <!-- Heading Row -->
-    <div class="row align-items-center my-5">
-      <div class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="http://placehold.it/900x400" alt="">
-      </div>
-      <!-- /.col-lg-8 -->
-      <div class="col-lg-5">
-        <h1 class="font-weight-light">Business Name or Tagline</h1>
-        <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-        <a class="btn btn-primary" href="#">Call to Action!</a>
-      </div>
-      <!-- /.col-md-4 -->
-    </div>
-    <!-- /.row -->
-
-    <!-- Call to Action Well -->
-    <div class="card text-white bg-secondary my-5 py-4 text-center">
-      <div class="card-body">
-        <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
-      </div>
-    </div>
 
     <!-- Content Row -->
     <div class="row">
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">Card One</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            <img src="Resources/assets/images/Fig1.png" class="figure-img img-fluid rounded" alt="figure1">
+            <h2 class="card-title">City Latitude vs. Max Tempurature</h2>
+            <p class="card-text">DESCRIBE HERE</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
+            <a href="visualization_page1.html" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>
       </div>
@@ -89,38 +85,53 @@
       <div class="col-md-4 mb-5">
         <div class="card h-100">
           <div class="card-body">
-            <h2 class="card-title">Card Two</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            <img src="Resources/assets/images/Fig2.png" class="figure-img img-fluid rounded" alt="figure1">
+            <h2 class="card-title">City Latitude vs. Humidity</h2>
+            <p class="card-text">DESCRIBE HERE</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
-          </div>
-        </div>
-      </div>
-      <!-- /.col-md-4 -->
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">Card Three</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary btn-sm">More Info</a>
+            <a href="visualization_page2.html" class="btn btn-primary btn-sm">More Info</a>
           </div>
         </div>
       </div>
       <!-- /.col-md-4 -->
 
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="Resources/assets/images/Fig3.png" class="figure-img img-fluid rounded" alt="figure1">
+            <h2 class="card-title">City Latitude vs. Cloudiness</h2>
+            <p class="card-text">DESCRIBE HERE</p>
+          </div>
+          <div class="card-footer">
+            <a href="visualization_page3.html" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="Resources/assets/images/Fig4.png" class="figure-img img-fluid rounded" alt="figure1">
+            <h2 class="card-title">City Latitude vs. Wind Speed</h2>
+            <p class="card-text">DESCRIBE HERE</p>
+          </div>
+          <div class="card-footer">
+            <a href="visualization_page4.html" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
     </div>
     <!-- /.row -->
 
   </div>
-  <!-- /.container -->
+  <!-- /.container -->  
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Sydney's Weather Report 2021</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -128,6 +139,12 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
 
 </body>
 
